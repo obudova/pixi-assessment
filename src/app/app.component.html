@@ -1,3 +1,12 @@
-<div class="main" #gameContainer></div>
+<header>
+<h1>
+  Pixi monster slots
+</h1>
+</header>
 
-<button (click)="startPlay()">Start</button>
+<main>
+  <div class="main" #gameContainer></div>
+</main>
+<footer>
+  <button (click)="startPlay()" [disabled]="running" class="h1">Spin the wheels</button>
+</footer>
